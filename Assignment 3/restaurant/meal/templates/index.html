@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/index.css'%}" />
+
+
+ <div class="flex_container">
+  {% for i in food_data.categories %}
+
+  <div class="card" style="width: 18rem">
+    <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-id">{{i.idCategory}}</h5>
+      <h5 class="card-title">{{i.strCategory}}</h5>
+      <p class="card-text">{{i.strCategoryDescription| truncatewords:10}}</p>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>  
+
+
+{% endblock content %}

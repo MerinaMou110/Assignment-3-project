@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+.text{
+    padding-top: 50px;
+    color: white;
+}
+.bt{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.im{
+    width: 20px;
+}

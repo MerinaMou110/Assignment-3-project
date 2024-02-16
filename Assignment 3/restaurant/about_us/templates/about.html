@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}"/>
+<div class="home_p row d-flex p-5">
+    <div class="text col-md-6  ">
+        <h4>ABOUT US</h4>
+        <h1><i>Red Stiletto</i></h1>
+        <h1><i>Restaurant</i></h1>
+        <p>Welcome to our restaurant’s “About Us” page!
+             Here, we share the story of how our culinary adventure began and what makes us unique.
+        </p>
+        <button class="bt">Read More</button>
+    </div>
+    <div class="h_image  col-md-6 ">
+        <img class="w-100 " src="{% static 'images/food1.jpg'%}" alt="">
+
+    </div>
+</div>
+
+{% endblock content %}
